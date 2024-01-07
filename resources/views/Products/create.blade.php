@@ -24,10 +24,16 @@
         <x-input-error class="mt-2" :messages="$errors->get('nama_produk')" />
     </div>
     <div class="max-w-xl">
-        <x-input-label for="harga" value="Harga" />
-        <x-text-input id="harga" type="text" name="harga" class="mt-1 block w-full" value="{{ old('harga')}}"
+        <x-input-label for="harga_beli" value="Harga Beli" />
+        <x-text-input id="harga_beli" type="text" name="harga_beli" class="mt-1 block w-full" value="{{ old('harga_beli')}}"
             required />
-        <x-input-error class="mt-2" :messages="$errors->get('harga')" />
+        <x-input-error class="mt-2" :messages="$errors->get('harga_beli')" />
+    </div>
+    <div class="max-w-xl">
+        <x-input-label for="harga_jual" value="Harga Jual" />
+        <x-text-input id="harga_jual" type="text" name="harga_jual" class="mt-1 block w-full" value="{{ old('harga_jual')}}"
+            required />
+        <x-input-error class="mt-2" :messages="$errors->get('harga_jual')" />
     </div>
     <div class="max-w-xl">
         <x-input-label for="stok" value="Stok" />

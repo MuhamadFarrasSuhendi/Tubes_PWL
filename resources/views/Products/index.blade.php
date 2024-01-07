@@ -19,7 +19,8 @@
                                 <th>No</th>
                                 <th>Code</th>
                                 <th>Nama Produk</th>
-                                <th>Harga</th>
+                                <th>Harga Beli</th>
+                                <th>Harga jual</th>
                                 <th>Stok</th>
                                 <th>Kategori ID</th>
                             </tr>
@@ -30,7 +31,8 @@
                             <td>{{ $num++ }}</td>
                             <td>{{ $product->code }}
                             <td>{{ $product->nama_produk }}</td>
-                            <td>{{ $product->harga }}</td>
+                            <td>{{ $product->harga_beli }}</td>
+                            <td>{{ $product->harga_jual }}</td>
                             <td>{{ $product->stok }}</td>
                             <td>{{ $product->category->code }}-{{ $product->category->nama }}</td>
                         </tr>
